@@ -5,8 +5,9 @@ Link: [CHRIMap](http://inosaint.github.io/CHRImap)
 
 Things to do:
 
-+ Add hover capability
-+ Tooltips
++ Add hover capability (added)
++ Tooltips (added)
 + Choose suitable colours
 + Add Export capability using [HTML5](https://stackoverflow.com/questions/923885/capture-html-canvas-as-gif-jpg-png-pdf/3514404#3514404)
-+ Embed the Spreadsheet on the page itself
++ Make the Spreadsheet editable on the page itself
++ Add Legend
