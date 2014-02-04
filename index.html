@@ -10,11 +10,11 @@
 
     <style type="text/css">
 
-  path:hover
+ /* path:hover
   {
     opacity: 0.5;
   }
-
+*/
 path {
   stroke:white;
   stroke-width: .5px;
@@ -124,9 +124,9 @@ div.tooltip {
             }
 
           
-        })
+        }).style("opacity", 0.8)
            .on("mouseover", function(d) {
-           /* d3.select(this).transition().duration(300).style("opacity", 1);*/
+            d3.select(this).transition().duration(300).style("opacity", 1);
             div.transition().duration(300)
             .style("opacity", 1);
 
@@ -224,7 +224,7 @@ div.tooltip {
     </div>
     <!-- Embedded Spreadsheet -->
    <div style="float:right; margin-right:50px;">
-    	<iframe width='260' height='600' frameborder='0' src='https://docs.google.com/spreadsheet/ccc?key=0Ap2hoxVM_haNdERKVlZDaGQxUTdJX0J3OEFaaURELUE&usp=sharing&single=true&range=A1%3AB36&output=html&widget=true&rm=minimal'></iframe>
+    	<iframe width='300' height='600' frameborder='0' src='https://docs.google.com/spreadsheet/ccc?key=0Ap2hoxVM_haNdERKVlZDaGQxUTdJX0J3OEFaaURELUE&single=true&rm=minimal&widget=true'></iframe>
          
     </div>
 
