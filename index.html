@@ -175,29 +175,10 @@ canvas{
         } );
 
 
-        $("#savePNG").click(function() {
-
-        console.log('hello');
-        //console.log(canvas);
-        // the canvg call that takes the svg xml and converts it to a canvas
-        /*canvg('canvas', $("#indiaMap").html());
-
-        // the canvas calls to output a png
-        var canvas = document.getElementById("canvas");
-        console.log(canvas);
-        var img = canvas.toDataURL("image/jpg");*/
-        // do what you want with the base64, write to screen, post to server, etc...
-        //return window.location.href = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
-
-        var svgString = $("#indiaMap").html();
-
-        console.log(svgString);
-
-        var svgDownload = "data:image/svg+xml,"+encodeURIComponent(svgString);
-
-                
-        window.location.href = svgDownload;        
-            });
+        $("#save-svg").click(function() {
+	  var svgString = $("#map").html();
+          open("data:image/svg+xml,"+encodeURIComponent(svgString));
+        });
             
     });
 
@@ -213,7 +194,7 @@ canvas{
     </div>
     
     <div><a href='' onclick="getStateInfo">Refresh</a></div>
-    <div><button id="savePNG">Save as PNG</button></div>
+    <div><button id="save-svg">Save as SVG</button></div>
 
     <!-- <canvas id="canvas" width="1000px" height="600px"></canvas>  -->
     <div id="map" style="float:left">
