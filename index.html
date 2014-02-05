@@ -176,26 +176,9 @@ canvas{
 
 
         $("#save-svg").click(function() {
-
-        console.log('hello');
-        //console.log(canvas);
-        // the canvg call that takes the svg xml and converts it to a canvas
-        /*canvg('canvas', $("#indiaMap").html());
-
-        // the canvas calls to output a png
-        var canvas = document.getElementById("canvas");
-        console.log(canvas);
-        var img = canvas.toDataURL("image/jpg");*/
-        // do what you want with the base64, write to screen, post to server, etc...
-        //return window.location.href = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
-
-        var svgString = $("#map").html();
-
-        console.log(svgString);
-
-        window.location.href = "data:image/svg+xml,"+encodeURIComponent(svgString);
-
-      });
+	  var svgString = $("#map").html();
+          open("data:image/svg+xml,"+encodeURIComponent(svgString));
+        });
             
     });
 
