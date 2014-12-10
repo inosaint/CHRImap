@@ -53,3 +53,17 @@ p{
 li {
   color: #000;
 }
+
+
+#states{
+   border: 1;
+   padding:0px;
+   float: right;
+}
+
+#states td, #states td input  {
+  height: 100%;
+  font-size: 12px;
+  padding: 0px;
+  margin: 0px;
+}
